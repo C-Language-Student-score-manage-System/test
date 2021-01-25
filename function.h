@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<math.h>
 void print_menu()
 {
     printf("************学生成绩系统菜单***********************\n");
@@ -31,7 +32,7 @@ void choose_menu()
     {   
         case 1:
         {
-            printf("1");
+            //
             break;
         }
         case 2:
