@@ -141,3 +141,47 @@ void log_in()
 
 //     fclose(fp_p);
 // }
+
+
+
+void Namesorting(STU student[],int n); 
+{
+	int i,j;
+	for(i=0;i<n-1;i++)
+		for(j=0;j<n-i-1;j++)
+		{
+			STU temp;
+			if(strcmp(student[j].stu_name,STU[j+1].stu_name)>0)
+			{
+				temp=student[j];
+				student[j]=student[j+1];
+				student[j+1]=temp;
+			}
+		}
+}
+
+
+
+void Averagesorting(STU student[],int n)
+{
+	int i,j;
+	float average[n];
+	for(j=0;j<n;j++)
+	{
+		for(i=0;i<class;i++)
+			average[j]+=student[j].Score.score_id[i];
+		average[j]/=class;
+	}
+	for(i=0;i<n-1;i++)
+		for(j=0;j<n-i-1;j++)
+		{
+			STU temp;
+			if(average[j]>average[j+1])
+			{
+				temp=student[j];
+				student[j]=student[j+1];
+				student[j+1]=temp;
+			}
+		}
+		
+}
