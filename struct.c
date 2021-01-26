@@ -18,9 +18,9 @@ struct score
 typedef struct stu
 {
     long stu_id;
-    char stu_name[32];
-    struct score;
+    char stu_name[32]; 
     struct sex;
     struct collage;
+    struct score;
 }STU;
 STU student[1024];
