@@ -12,9 +12,9 @@ struct sex
 }Sex;
 struct score
 {
-    int score_id;
-    char score_name[32];
-}Score[4];
+    int score_id[4];
+    char score_name[4][32];
+}Score;
 typedef struct stu
 {
     long stu_id;
