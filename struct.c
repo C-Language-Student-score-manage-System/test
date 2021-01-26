@@ -22,4 +22,4 @@ typedef struct stu
     struct score;
     struct sex;
     struct collage;
-}STU[1024];
+}STU;
