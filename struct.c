@@ -23,3 +23,4 @@ typedef struct stu
     struct sex;
     struct collage;
 }STU;
+STU student[1024];
